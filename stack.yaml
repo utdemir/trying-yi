@@ -1,0 +1,22 @@
+resolver: nightly-2016-10-21
+
+packages:
+- '.'
+- location: 'yi/'
+  extra-dep: true
+  subdirs:
+    - 'yi-core'
+    - 'yi-frontend-vty'
+    - 'yi-keymap-emacs'
+    - 'yi-language'
+    - 'yi-misc-modes'
+    - 'yi-mode-haskell'
+
+extra-deps:
+- Hclip-3.0.0.4
+
+extra-lib-dirs:
+- /usr/local/opt/icu4c/lib 
+
+extra-include-dirs:
+- /usr/local/opt/icu4c/include

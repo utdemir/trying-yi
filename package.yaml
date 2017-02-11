@@ -1,0 +1,24 @@
+name: my-yi
+version: 0.13.5
+license: GPL-2
+maintainer: Yi developers <yi-devel@googlegroups.com>
+github: yi-editor/yi
+category: Yi
+
+ghc-options: -Wall -ferror-spans -threaded
+
+dependencies:
+    - base >= 4.8 && < 5
+    - microlens-platform
+    - mtl
+    - yi-core
+    - yi-frontend-vty
+    - yi-keymap-emacs
+    - yi-misc-modes
+    - yi-mode-haskell
+    - yi-rope
+
+executables:
+    my-yi:
+        main: Main.hs
+        source-dirs: .
